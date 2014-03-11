@@ -1,0 +1,31 @@
+<!--
+  This template loads for the 'tab.pet-detail' state (app.js)
+  'pet' is a $scope variable created in the PetCtrl controller (controllers.js)
+  The PetCtrl pulls data from the Pets service (service.js)
+  The Pets service returns an array of pet data
+-->
+<ion-view title="pet.title">
+  <ion-content has-header="true" padding="true">
+    <div style="overflow: hidden; height: 300px">
+      <img src="{{pet.image}}" style="border: 1px solid #000; width: 100%;">
+    </div>
+    <p>{{ pet.description }}</p>
+    <h3>Maker: Cheese Makers Name</h3>
+    <p>{{ pet.city }} {{ pet.state }} {{ pet.country }}</p>
+    <p><b>Source:</b> Cow & Goat</p>
+    <hr>
+    <p>This is a greate little cheese from western Georgia. This is a greate little cheese from western Georgia.
+       This is a greate little cheese from western Georgia. This is a greate little cheese from western Georgia.
+       This is a greate little cheese from western Georgia. This is a greate little cheese from western Georgia.
+    </p>
+    <p>This is a greate little cheese from western Georgia. This is a greate little cheese from western Georgia.
+       This is a greate little cheese from western Georgia. This is a greate little cheese from western Georgia.
+       This is a greate little cheese from western Georgia. This is a greate little cheese from western Georgia.
+    </p>
+    <p>This is a greate little cheese from western Georgia. This is a greate little cheese from western Georgia.
+       This is a greate little cheese from western Georgia. This is a greate little cheese from western Georgia.
+       This is a greate little cheese from western Georgia. This is a greate little cheese from western Georgia.
+    </p>
+    <p><a class="button button-small icon ion-arrow-left-b" href="#/tab/pets"> All Cheeses</a></p>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,21 @@
+<!-- 
+  This template gets placed in the Pet tab's <ion-nav-view> directive.
+  It was wired up in the app config (app.js) 
+  The 'pets' data comes from its $scope within PetIndexCtrl (controller.js)
+-->
+<ion-view title="'Formagg.io'">
+  <ion-content has-header="true" has-tabs="true">
+
+    <ion-list>
+      <ion-item ng-repeat="pet in pets" type="item-text-wrap" href="#/tab/pet/{{pet.id}}">
+        <img src="{{pet.image}}" style="border: 1px solid #000; padding: 3px;" align="right" width="100">
+        <h2>{{pet.title}}</h2>
+        <p>made by {{pet.maker}}</p>
+        <p>{{pet.description}}</p>
+        <p>{{pet.city}}, {{pet.state}} {{pet.country}}</p>
+      </ion-item>
+      
+    </ion-list>
+
+  </ion-content>
+</ion-view>
