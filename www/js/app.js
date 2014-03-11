@@ -60,6 +60,15 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
           templateUrl: 'templates/about.html'
         }
       }
+    })
+
+    .state('tab.location', {
+      url: '/location',
+      views: {
+        'location-tab': {
+          templateUrl: 'templates/location.html'
+        }
+      }
     });
 
   // if none of the above states are matched, use this as the fallback
